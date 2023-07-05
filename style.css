@@ -1,0 +1,45 @@
+html {
+    overflow: hidden;
+}
+
+
+body {
+        font-family: 'Montserrat', 'sans-serif', 'Mansalva', cursive;
+        background-image: url('fundo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+}
+
+h2 {
+    font-family: sans-serif;
+
+} 
+
+button {
+    border: none;
+}
+
+.itens-comprados {
+text-decoration: line-through;
+}
+
+.borda-lista {
+    border-bottom: dotted 2px rgb(0, 192, 250);
+}
+
+input:disabled {
+    border: none;
+    background: none;
+    color: black;
+}
+
+input {
+    border: none;
+    background: none;
+    color: black;
+}
+
+form {
+    border-radius: 20%;
+}
