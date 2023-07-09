@@ -116,3 +116,27 @@ function salvarEdicao() {
     itemAEditar = -1;
     mostrarItem()
 }
+
+const apagaTudo = document.getElementById('botaoapaga');
+
+apagaTudo.addEventListener('click', function() {
+  const confirmacao = confirm('Você tem certeza de que deseja apagar tudo?');
+
+  if (confirmacao) {
+    apagar(true);
+  } else {
+    apagar(false);
+  }
+});
+
+function apagar(confirmacao) {
+  if (confirmacao) {
+    ulItens.innerHTML = ''
+    ulItensComprados.innerHTML = ''
+    listaDeItens = []
+    atualizaLocalStorage()
+
+  } else {
+    alert('operação cancelada!')
+  }
+}
